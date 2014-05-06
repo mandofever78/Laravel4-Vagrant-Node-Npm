@@ -8,8 +8,8 @@ class other
     }
     package 
     { 
-        "sqlite":
-            ensure  => present,
+        "git":
+            ensure  => latest,
             require => Exec['apt-get update']
     }
 }
